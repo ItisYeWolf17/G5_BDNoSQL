@@ -13,8 +13,8 @@
 
     <header class="header">
             <nav class="menu">
-                <a href="./main_menu.php">
-                    <img src="../assets//img/mainLogo.jpg" alt="Logo CinemaniaX" class="logo">
+                <a href="../admin/main_menu.php">
+                    <img src="../assets/img/mainLogo.jpg" alt="Logo CinemaniaX" class="logo">
                 </a>
                 <ul class="navMenu">
                 <li>

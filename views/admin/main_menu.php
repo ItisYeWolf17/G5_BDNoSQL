@@ -41,9 +41,9 @@
     </article>
 
     <article class="card-servicio">
-        <a href="./Ventas/ventas.php" class="link">
+        <a href="../Funciones/funcion.php" class="link">
             <div class="img-servicio">
-                <img src="./assets/img/ventas.avif" alt="">
+                <img src="../assets/img/Funciones.webp" alt="">
             </div>
             <div class="info-servicio">
                 <h4>Funciones</h4>
@@ -52,9 +52,9 @@
     </article>
 
     <article class="card-servicio">
-        <a href="./Inventario/inventario.php" class="link">
+        <a href="../Reservas/reserva.php class="link">
             <div class="img-servicio">
-                <img src="./assets/img/inventario.webp" alt="">
+                <img src="../assets/img/Reservas.jpg" alt="">
             </div>
             <div class="info-servicio">
                 <h4>Reservas</h4>

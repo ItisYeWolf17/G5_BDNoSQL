@@ -25,7 +25,7 @@
             <label for="director">Director</label>
             <input type="text" name="director" id="director" required value="<?php echo $pelicula->director?>">
 
-            <label for="genero">Geneoro</label>
+            <label for="genero">Genero</label>
             <input type="text" name="genero" id="genero" required value="<?php echo $pelicula->genero?>">
 
             <label for="duracion">Duracion</label>

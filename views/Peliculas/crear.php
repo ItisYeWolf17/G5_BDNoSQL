@@ -15,7 +15,7 @@
             <label for="director">Director</label>
             <input type="text" name="director" id="director" required >
 
-            <label for="genero">Geneoro</label>
+            <label for="genero">Genero</label>
             <input type="text" name="genero" id="genero" required >
 
             <label for="duracion">Duracion</label>
