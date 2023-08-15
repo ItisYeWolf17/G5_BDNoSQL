@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CinemaniaX</title>
-    <link href="../public/css/index.css" rel="stylesheet"/>
+    <link href="./assets/css/index.css" rel="stylesheet"/>
 </head>
 
 <body>
     <header class="header">
             <nav class="menu">
                 <a href="./index.html">
-                    <img src="../public/img/mainLogo.jpg" alt="Logo CinemaniaX" class="logo">
+                    <img src="./assets/img/mainLogo.jpg" alt="Logo CinemaniaX" class="logo">
                 </a>
                 <ul class="navMenu">
                     <li>
