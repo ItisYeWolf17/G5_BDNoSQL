@@ -1,0 +1,72 @@
+
+
+/* Estilos para el título "Cartelera" */
+.titulo-cartelera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+
+.titulo-cartelera h1 {
+    font-size: 3rem;
+    color: #F6BE00; /* Color amarillo para el título */
+}
+
+
+
+
+/* Add the new class and apply Grid layout to the movie list */
+.peliculas-lista-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 columns with equal width */
+    grid-gap: 20px; /* Add some space between the grid items */
+    list-style: none;
+    padding: 0;
+}
+
+.peliculas-lista-grid li {
+    text-align: center;
+}
+
+/* Adjust the style for the cards */
+.tarjeta {
+    background-color: #f9f9f9; /* Add a light gray background color to the card */
+    border: 1px solid #F6BE00; /* Reduce the border thickness */
+    border-radius: 10px;
+    display: inline-block; /* Set display to inline-block */
+    margin: 10px; /* Add margins around the cards */
+    text-align: left; /* Align the content to the left */
+    height: 400px; /* Set a fixed height for the cards */
+    width: 320px; /* Set a fixed width for the cards */
+
+}
+
+.contenido-tarjeta {
+    padding: 10px;S
+}
+
+/* Adjust the image size to fit the card width */
+.tarjeta img {
+    width: 100%;
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the images fill the entire container without stretching */
+    border-radius: 10px 10px 0 0; /* Apply rounded corners only to the top of the image */
+}
+
+/* Style for the name of the movie */
+.nombre-pelicula {
+    margin: 10px 0; /* Add margin to the top and bottom of the name to center it */
+    font-size: 1.2rem; /* Increase the font size for the movie name */
+    text-align: center; /* Center the description text */
+}
+
+/* Style for the movie description */
+.descripcion-pelicula {
+    margin: 5px 0; /* Add some spacing between the name and description */
+    font-size: 1.2rem; /* Increase the font size for the movie name */
+    text-align: center; /* Center the description text */
+}
+
+

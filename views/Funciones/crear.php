@@ -7,10 +7,10 @@
         <form action="../../controllers/Funciones/insert.php" method="POST">
 
             <label for="_id">ID</label>
-            <input type="number" name="_id" id="_id" required>
+            <input type="text" name="_id" id="_id" required>
 
             <label for="pelicula">Pelicula</label>
-            <input type="number" name="pelicula" id="pelicula" required >
+            <input type="text" name="pelicula" id="pelicula" required >
 
             <label for="sala">Sala</label>
             <input type="text" name="sala" id="sala" required >

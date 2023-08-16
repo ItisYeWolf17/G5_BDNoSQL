@@ -74,6 +74,34 @@ class PeliculaController extends Database
             return $th->getMessage();
         }
     }
+
+    public function listarCartelera(){
+        try {
+            $prox = "0";
+            $conn = parent::conectar();
+            $coleccion = $conn->Peliculas;
+            $datos = $coleccion->find(
+                ["prox" => $prox]
+            );
+            return $datos;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
+
+        public function listarProx(){
+        try {
+            $prox = "1";
+            $conn = parent::conectar();
+            $coleccion = $conn->Peliculas;
+            $datos = $coleccion->find(
+                ["prox" => $prox]
+            );
+            return $datos;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
 }
 
 //$objeto = new UsuarioController();

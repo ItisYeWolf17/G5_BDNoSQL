@@ -12,7 +12,6 @@
 
     $_id = $usuario -> _id;
 
-
 ?>
     <h2 class="titulo-crud">ACTUALIZAR USUARIO</h2>
 

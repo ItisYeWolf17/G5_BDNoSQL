@@ -18,13 +18,13 @@
         <form action="../../controllers/Funciones/actualizar.php" method="POST">
             <input type="text" hidden value="<?php echo $_id?>" name="id" id="name">
             <label for="pelicula">Pelicula</label>
-            <input type="number" name="pelicula" id="pelicula" required value="<?php echo $funcion->pelicula?>">
+            <input type="text" name="pelicula" id="pelicula" required value="<?php echo $funcion->pelicula?>">
 
             <label for="sala">Sala</label>
             <input type="text" name="sala" id="sala" required value="<?php echo $funcion->sala?>">
 
             <label for="fecha">Fecha</label>
-            <input type="text" name="fecha" id="fecha" required value="<?php echo $funcion->fecha?>">
+            <input type="date" name="fecha" id="fecha" required value="<?php echo $funcion->fecha?>">
 
             <label for="hora">Hora</label>
             <input type="text" name="hora" id="hora" required value="<?php echo $funcion->hora?>">

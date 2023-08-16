@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +22,11 @@
                 </a>
                 <ul class="navMenu">
                 <li>
-                    <a href="" class="navLink">ADMIN</a>
+                    <a href="" class="navLink"><?php echo $_SESSION["user"]?></a>
                 </li>
 
                 <li>
-                    <a href="#" class="navLink">Cerrar Sesion</a>
+                    <a href="../../Controllers/Usuarios/logout.php" class="navLink">Cerrar Sesion</a>
                 </li>
             </ul>   
             </nav>

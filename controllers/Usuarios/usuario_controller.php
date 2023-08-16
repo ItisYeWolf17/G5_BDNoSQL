@@ -45,10 +45,11 @@ class UsuarioController extends Database
         }
     }
 
-    public function search($id){
+    public function search($id)
+    {
         try {
             $conn = Database::conectar();
-            $coleccion = $conn -> Usuarios;
+            $coleccion = $conn->Usuarios;
             $resultado = $coleccion->findOne(
                 array(
                     '_id' => $id
@@ -60,14 +61,41 @@ class UsuarioController extends Database
         }
     }
 
-    public function delete($id){
+    public function delete($id)
+    {
         try {
             $conn = Database::conectar();
-            $coleccion = $conn -> Usuarios;
+            $coleccion = $conn->Usuarios;
             $resultado = $coleccion->deleteOne(
                 array(
                     '_id' => $id
                 )
+            );
+            return $resultado;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
+
+    public function obtenerCantidad()
+    {
+        try {
+            $conn = Database::conectar();
+            $coleccion = $conn->Usuarios;
+            $resultado = $coleccion->countDocuments();
+            return $resultado;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
+
+    public function validarUsuario($email,$password)
+    {
+        try {
+            $conn = Database::conectar();
+            $coleccion = $conn->Usuarios;
+            $resultado = $coleccion->findOne(
+                ["email" => $email, "password" => $password]
             );
             return $resultado;
         } catch (\Throwable $th) {

@@ -25,6 +25,9 @@
             <label for="director">Director</label>
             <input type="text" name="director" id="director" required value="<?php echo $pelicula->director?>">
 
+            <label for="descripcion">Descripcion</label>
+            <input type="text" name="descripcion" id="descripcion" required value="<?php echo $pelicula->descripcion?>">
+
             <label for="genero">Genero</label>
             <input type="text" name="genero" id="genero" required value="<?php echo $pelicula->genero?>">
 
@@ -36,6 +39,9 @@
 
             <label for="img">Imagen</label>
             <input type="text" name="img" id="img" required value="<?php echo $pelicula->img?>">
+
+            <label for="prox">Proximamente</label>
+            <input type="number" name="prox" id="prox" required value="<?php echo $pelicula->prox?>">
 
             <button>
                 Actualizar

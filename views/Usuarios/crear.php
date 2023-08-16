@@ -7,7 +7,7 @@
         <form action="../../controllers/Usuarios/insert.php" method="POST">
 
             <label for="_id">ID</label>
-            <input type="number" name="_id" id="_id" required>
+            <input type="text" name="_id" id="_id" required>
 
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre" required>

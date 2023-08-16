@@ -52,7 +52,7 @@
     </article>
 
     <article class="card-servicio">
-        <a href="../Reservas/reserva.php class="link">
+        <a href="../Reservas/reserva.php" class="link">
             <div class="img-servicio">
                 <img src="../assets/img/Reservas.jpg" alt="">
             </div>

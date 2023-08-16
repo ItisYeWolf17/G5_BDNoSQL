@@ -25,8 +25,8 @@
                             <th>Pelicula</th>
                             <th>Sala</th>
                             <th>Fecha</th>
-                            <th>hora</th>
-                            <th>precio</th>
+                            <th>Hora</th>
+                            <th>Precio</th>
                             <th></th>
                             <th></th>
 

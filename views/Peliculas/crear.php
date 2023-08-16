@@ -15,6 +15,9 @@
             <label for="director">Director</label>
             <input type="text" name="director" id="director" required >
 
+            <label for="descripcion">Descripcion</label>
+            <input type="text" name="descripcion" id="descripcion" required >
+
             <label for="genero">Genero</label>
             <input type="text" name="genero" id="genero" required >
 
@@ -26,6 +29,9 @@
 
             <label for="img">Imagen</label>
             <input type="text" name="img" id="img" required >
+
+            <label for="prox">Proximamente</label>
+            <input type="number" name="prox" id="prox" required >
 
             <button>
                 Agregar

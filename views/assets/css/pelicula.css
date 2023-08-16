@@ -1,0 +1,138 @@
+/* Estilos generales */
+body {
+  background-color: rgb(0, 21, 41);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para la portada */
+.portada {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portada .contenido-portada {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Estilos para el recuadro de descripción */
+.recuadro {
+  position: absolute;
+  bottom: 480px;
+  left: 20px;
+  width: 200px;
+  height: auto; /* Ajusta automáticamente la altura al tamaño de la imagen */
+  background-color: #F6BE00;
+  padding: 0px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  overflow: hidden; /* Oculta el contenido que desborde del div */
+
+}
+
+
+.recuadro img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Estilos para la descripción de la película */
+.descripcion-pelicula {
+  position: absolute;
+  top: calc(550px + 20px);
+  right: 20px;
+  max-width: 500px;
+  background-color: #F6BE00;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Estilos para la tabla de salas y horarios */
+.tabla-salas {
+  margin: 50px auto;
+  max-width: 800px;
+  border-collapse: collapse;
+}
+
+.fila-titulos {
+  background-color: #2b405f;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.fila-horarios {
+  display: flex;
+  text-align: center;
+}
+
+.columna-titulo,
+.columna-horario {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.horario-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.boton-amarillo {
+  background-color: #F6BE00;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Estilos para pantallas más pequeñas (por ejemplo, tablets y móviles) */
+@media (max-width: 768px) {
+  .portada {
+    height: 300px;
+  }
+
+  .portada .contenido-portada {
+    font-size: 16px;
+  }
+
+  .recuadro {
+    top: calc(100% - 70px);
+  }
+
+  .descripcion-pelicula {
+    top: calc(550px + 10px);
+    right: 10px;
+    max-width: 300px;
+    font-size: 12px;
+  }
+
+  .tabla-salas {
+    margin: 30px auto;
+  }
+}

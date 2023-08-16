@@ -74,6 +74,68 @@ class FuncionController extends Database
             return $th->getMessage();
         }
     }
+
+    public function listar2D($id)
+    {
+        try {
+            $conn = parent::conectar();
+            $sala = "1";
+            $coleccion = $conn->Funciones;
+            $datos = $coleccion->find(
+                ["pelicula" => $id, "sala" => ['$in' => ["1", "2"]]]
+            );
+            return $datos;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
+
+    public function listar3D($id)
+    {
+        try {
+            $conn = parent::conectar();
+            $sala = "3";
+            $coleccion = $conn->Funciones;
+            $datos = $coleccion->find(
+                ["pelicula" => $id, "sala" => $sala]
+
+            );
+            return $datos;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
+
+    public function listar4D($id)
+    {
+        try {
+            $conn = parent::conectar();
+            $sala = "4";
+            $coleccion = $conn->Funciones;
+            $datos = $coleccion->find(
+                ["pelicula" => $id, "sala" => $sala]
+            );
+            return $datos;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
+
+    public function listar5D($id)
+    {
+        try {
+            $conn = parent::conectar();
+            $sala = "5";
+            $coleccion = $conn->Funciones;
+            $datos = $coleccion->find(
+                ["pelicula" => $id, "sala" => $sala]
+
+            );
+            return $datos;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
 }
 
 //$objeto = new UsuarioController();
